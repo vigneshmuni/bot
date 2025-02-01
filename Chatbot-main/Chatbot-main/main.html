@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom-In Transition for GIF</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="bg-black">
+        <div class="zoom-container">
+            <img src="your-animation.gif" alt="Animated GIF" id="gif">
+        </div>
+    </div>
+    <div class="index-content" id="indexContent">
+        <h1>Welcome to the Index Page</h1>
+        <!-- Add your index content here -->
+   
+    <script>
+        function showIndexContent() {
+            document.getElementById('gif').style.display = 'none';
+            document.getElementById('indexContent').style.display = 'block';
+        }
+
+        setTimeout(function() {
+            document.getElementById('gif').style.display = 'none';
+            window.location.href = 'index.html'; // Change 'index.html' to your actual index page
+        }, 2000);
+    </script>
+</body>
+</html>
+    

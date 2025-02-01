@@ -1,0 +1,65 @@
+/* Reset some default styles for the body and HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Create a black background */
+.bg-black {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iframe-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border: none; /* Remove iframe border if desired */
+}
+
+/* Container for the GIF with zoom animation */
+.zoom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Style for the index content */
+.index-content {
+    display: none; /* Initially hidden */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Style for the GIF */
+#gif {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    animation: zoom 2s ease; /* Adjust the duration as needed */
+}
+
+/* Define the zoom animation */
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2); /* Adjust the scale value for zoom level */
+    }
+}
